@@ -146,9 +146,9 @@ public final class LitePalAttr {
 	public List<String> getClassNames() {
 		if (classNames == null) {
 			classNames = new ArrayList<String>();
-			classNames.add("org.litepal.model.Table_Schema");
+			classNames.add("com.reversecoder.sqlite.model.Table_Schema");
 		} else if (classNames.isEmpty()) {
-			classNames.add("org.litepal.model.Table_Schema");
+			classNames.add("com.reversecoder.sqlite.model.Table_Schema");
 		}
 		return classNames;
 	}
@@ -182,7 +182,7 @@ public final class LitePalAttr {
 	 * If dbname is undefined, or version is less than 1, or version is earlier
 	 * than current version, throw InvalidAttributesException.
 	 * 
-	 * @throws org.litepal.exceptions.InvalidAttributesException
+	 * @throws com.reversecoder.sqlite.exceptions.InvalidAttributesException
 	 */
 	public void checkSelfValid() {
 		if (TextUtils.isEmpty(dbName)) {

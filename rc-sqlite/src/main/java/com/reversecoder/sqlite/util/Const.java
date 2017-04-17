@@ -59,7 +59,7 @@ public interface Const {
 		/**
 		 * Constant configuration file name.
 		 */
-		public static final String CONFIGURATION_FILE_NAME = "litepal.xml";
+		public static final String CONFIGURATION_FILE_NAME = "rc_sqlite.xml";
 	}
 
 	public interface TableSchema {

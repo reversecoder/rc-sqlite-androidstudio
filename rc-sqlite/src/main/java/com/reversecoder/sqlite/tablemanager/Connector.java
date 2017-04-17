@@ -90,7 +90,7 @@ public class Connector {
 	 * 
 	 * @return LitePalHelper object.
 	 * 
-	 * @throws org.litepal.exceptions.InvalidAttributesException
+	 * @throws com.reversecoder.sqlite.exceptions.InvalidAttributesException
 	 */
 	private static LitePalOpenHelper buildConnection() {
 		LitePalAttr litePalAttr = LitePalAttr.getInstance();

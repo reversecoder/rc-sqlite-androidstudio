@@ -83,9 +83,9 @@ public class LitePalConfig {
     public List<String> getClassNames() {
         if (classNames == null) {
             classNames = new ArrayList<String>();
-            classNames.add("org.litepal.model.Table_Schema");
+            classNames.add("com.reversecoder.sqlite.model.Table_Schema");
         } else if (classNames.isEmpty()) {
-            classNames.add("org.litepal.model.Table_Schema");
+            classNames.add("com.reversecoder.sqlite.model.Table_Schema");
         }
         return classNames;
     }
