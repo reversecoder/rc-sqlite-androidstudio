@@ -17,6 +17,8 @@
 package com.reversecoder.sqlite.demo.activity;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,39 +26,35 @@ import android.widget.Button;
 
 import com.reversecoder.sqlite.demo.R;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class ManageTablesActivity extends Activity implements OnClickListener {
 
-    private static final String TAG = "MainActivity";
+	private Button mCurrentModelStructureBtn;
+	
+	private Button mOperateDatabaseBtn;
 
-	private Button mManageTableBtn;
-
-	private Button mCrudBtn;
-
-	private Button mAggregateBtn;
+	public static void actionStart(Context context) {
+		Intent intent = new Intent(context, ManageTablesActivity.class);
+		context.startActivity(intent);
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main_layout);
-		mManageTableBtn = (Button) findViewById(R.id.manage_table_btn);
-		mCrudBtn = (Button) findViewById(R.id.crud_btn);
-		mAggregateBtn = (Button) findViewById(R.id.aggregate_btn);
-		mManageTableBtn.setOnClickListener(this);
-		mCrudBtn.setOnClickListener(this);
-		mAggregateBtn.setOnClickListener(this);
+		setContentView(R.layout.manage_tables_layout);
+		mCurrentModelStructureBtn = (Button) findViewById(R.id.current_model_structure_btn);
+		mOperateDatabaseBtn = (Button) findViewById(R.id.operate_database_btn);
+		mCurrentModelStructureBtn.setOnClickListener(this);
+		mOperateDatabaseBtn.setOnClickListener(this);
 	}
 
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.manage_table_btn:
-			ManageTablesActivity.actionStart(this);
+		case R.id.current_model_structure_btn:
+			ModelListActivity.actionStart(this);
 			break;
-		case R.id.crud_btn:
-			CRUDActivity.actionStart(this);
-			break;
-		case R.id.aggregate_btn:
-			AggregateActivity.actionStart(this);
+		case R.id.operate_database_btn:
+			TableListActivity.actionStart(this);
 			break;
 		default:
 			break;

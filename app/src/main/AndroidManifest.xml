@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:name=".application.MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -17,6 +18,84 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ManageTablesActivity"
+            android:label="@string/manage_table_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ModelListActivity"
+            android:label="@string/manage_table_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.TableListActivity"
+            android:label="@string/manage_table_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ModelStructureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.TableStructureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.CRUDActivity"
+            android:label="@string/crud_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.SaveSampleActivity"
+            android:label="@string/save_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.UpdateSampleActivity"
+            android:label="@string/update_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.DeleteSampleActivity"
+            android:label="@string/delete_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.QuerySampleActivity"
+            android:label="@string/query_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.AggregateActivity"
+            android:label="@string/aggregate_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.CountSampleActivity"
+            android:label="@string/count_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MaxSampleActivity"
+            android:label="@string/max_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MinSampleActivity"
+            android:label="@string/max_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.AverageSampleActivity"
+            android:label="@string/average_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.SumSampleActivity"
+            android:label="@string/sum_sample"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
